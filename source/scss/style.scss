@@ -1,0 +1,87 @@
+//<МИКСИНЫ>===================================================================
+@mixin flexbox(){display: -webkit-box; display: -moz-box; display: -ms-flexbox;display: -webkit-flex;display:flex; font-size: 0;}
+@mixin tr($x,$y,$z){transform:translate3d($x,$y,$z); -webkit-transform:translate3d($x,$y,$z); -ms-transform:translate3d($x,$y,$z);-o-transform:translate3d($x,$y,$z)}
+//</МИКСИНЫ>==================================================================
+
+
+
+
+
+
+// Подлючение стилей
+@import "nullstyle.scss";
+// <ПОДКЛЮЧЕНИЕ ШРИФТОВ>=========================================================
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+//</ПОДКЛЮЧЕНИЕ ШРИФТОВ>=============================================================
+//<ШРИФТЫ>=======================================================================
+
+//<ШРИФТ ПО УМОЛЧАНИЮ>===========================================================
+$fontfamily:"Lato";
+//</ШРИФТ ПО УМОЛЧАНИЮ>==========================================================
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&display=swap');
+//</ШРИФТЫ>======================================================================
+
+//<ПЕРЕМЕННЫЕ>===================================================================
+$mw:1100;// Значение контейнера
+//</ПЕРЕМЕННЫЕ>==================================================================
+
+//<ОБОЛОЧКА>===================================================================
+.wrapper{
+}
+body{
+	overflow: hidden;
+   background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+	font-family: 'Poiret One', cursive;
+}
+//</ОБОЛОЧКА>==================================================================
+//<ОСНОВНАЯ СЕТКА>===================================================================
+
+.clock {
+	width: 95%;
+	height: 100vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	& h1{
+		display: inline-block;
+	   margin: 0 10px;
+	   font-weight: bold;
+	   font-size: 5rem;
+	   color: #fff;
+	}
+	&__container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__title{
+		display: inline-block;
+		font-weight: bold;
+		font-size: 5rem;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	&__day {}
+	&__hour {}
+	&__colon {}
+	&__minute {}
+	&__ampm {}
+}
+
+
+
+
+//</ОСНОВНАЯ СЕТКА>===================================================================
+
+
+
+
+
+
+
+
